@@ -1,4 +1,4 @@
 require 'rake/extensiontask'
 
-Rake::ExtensionTask.new('mysql2-arrow')
-Rake::ExtensionTask.new('pg-arrow')
+Rake::ExtensionTask.new('mysql2_arrow')
+Rake::ExtensionTask.new('pg_arrow')

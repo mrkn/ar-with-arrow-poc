@@ -6,3 +6,6 @@ gem "pg"
 gem "red-arrow"
 
 gem "rake-compiler"
+
+gem "rspec"
+gem "faker"
