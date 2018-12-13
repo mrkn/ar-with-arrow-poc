@@ -1,0 +1,10 @@
+/tmp/
+
+*.bundle
+*.exp
+*.dll
+*.dylib
+*.lib
+*.o
+*.obj
+*.so
