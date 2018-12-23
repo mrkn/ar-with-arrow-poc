@@ -6,7 +6,7 @@ module Mysql2Arrow
         require 'faker'
       end
 
-      def self.setup(num = 10_000)
+      def self.setup(num = 50_000)
         require_libraries
         connect_database
         create_table
