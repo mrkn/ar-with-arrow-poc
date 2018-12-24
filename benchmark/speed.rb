@@ -4,19 +4,21 @@ require_relative 'prelude'
 warmup = Integer(ENV.fetch('WARMUP', '0'))
 iterations = Integer(ENV.fetch('ITERS', '100'))
 
-# warm-up
-if warmup > 0
-  i = 1
-  while i < warmup
-    print "warmup: #{i}/#{warmup}\r"
-    i += 1
+def benchmark(warmup, iterations, limit = 10_000)
+  # warm-up
+  if warmup > 0
+    i = 1
+    while i <= warmup
+      Mysql2Test.test_pluck_by_arrow(limit)
+      Mysql2Test.test_pluck(limit)
+      print "warmup: #{i}/#{warmup}\r"
+      i += 1
+    end
+    puts
   end
-  puts
-end
 
-def benchmark(iterations, limit = 10_000)
   # pluck_by_arrow
-  i = 0
+  i = 1
   time_arrow = 0.0
   while i <= iterations
     before = Process.clock_gettime(Process::CLOCK_MONOTONIC)
@@ -30,7 +32,7 @@ def benchmark(iterations, limit = 10_000)
   end
   puts
 
-  i = 0
+  i = 1
   time_ar = 0.0
   while i <= iterations
     before = Process.clock_gettime(Process::CLOCK_MONOTONIC)
@@ -60,7 +62,8 @@ limits = [
 
 results = []
 limits.each do |limit|
-  time_arrow, time_ar = benchmark(iterations, limit)
+  time_arrow, time_ar = benchmark(warmup, iterations, limit)
+  warmup = 0
 
   arrow_ips = iterations.to_f / time_arrow
   ar_ips = iterations.to_f / time_ar
