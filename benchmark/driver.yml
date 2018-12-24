@@ -1,0 +1,10 @@
+prelude: |
+  $LOAD_PATH.unshift Dir.pwd
+  require 'prelude'
+  n = Integer(ENV.fetch('LIMIT', '10000'))
+
+benchmark:
+  - Mysql2Test.test_pluck_by_arrow(n)
+  - Mysql2Test.test_pluck(n)
+
+loop_count: 100
