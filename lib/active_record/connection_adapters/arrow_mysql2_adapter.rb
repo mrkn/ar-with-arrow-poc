@@ -1,0 +1,1 @@
+require 'active_record_ext/arrow_mysql2_adapter'
