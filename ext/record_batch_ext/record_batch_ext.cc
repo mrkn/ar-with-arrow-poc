@@ -19,7 +19,6 @@
 #include <arrow/api.h>
 #include <arrow/util/decimal.h>
 #include <arrow/util/checked_cast.h>
-#include <arrow/util/string_view.h>
 
 #include <arrow-glib/arrow-glib.hpp>
 #include <rbgobject.h>
@@ -100,16 +99,14 @@ class ColumnConverter {
         } else {
           int32_t length;
           const uint8_t* ptr = arr->GetValue(i, &length);
-          auto sv = arrow::util::string_view(reinterpret_cast<const char*>(ptr), length);
-          RETURN_NOT_OK(VisitValue(sv));
+          RETURN_NOT_OK(VisitValue(ptr, length));
         }
       }
     } else {
       for (int64_t i = 0; i < nr; ++i) {
         int32_t length;
         const uint8_t* ptr = arr->GetValue(i, &length);
-        auto sv = arrow::util::string_view(reinterpret_cast<const char*>(ptr), length);
-        RETURN_NOT_OK(VisitValue(sv));
+        RETURN_NOT_OK(VisitValue(ptr, length));
       }
     }
     return Status::OK();
@@ -208,9 +205,9 @@ class ColumnConverter {
   }
 
   // TODO: Support DECIMAL, too.
-  Status VisitValue(const arrow::util::string_view& sv) {
+  Status VisitValue(const uint8_t* ptr, const int32_t length) {
     VALUE cols = next_row();
-    VALUE val = rb_str_new(sv.data(), sv.size());
+    VALUE val = rb_str_new(reinterpret_cast<const char*>(ptr), length);
     rb_ary_store(cols, column_index_, val);
     return Status::OK();
   }
