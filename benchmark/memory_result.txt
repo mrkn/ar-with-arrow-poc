@@ -68,3 +68,291 @@ Mysql2Test.test_pluck_by_arrow(n)   336.130M bytes -     100.000 times
 Comparison:
 Mysql2Test.test_pluck_by_arrow(n): 336130048.0 bytes
          Mysql2Test.test_pluck(n): 3897942016.0 bytes - 11.60x  larger
+===== LIMIT=1000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    64.844M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   155.017M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  64843776.0 bytes 
+         Mysql2Test.test_pluck(n): 155017216.0 bytes - 2.39x  larger
+
+===== LIMIT=2000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    74.629M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   255.881M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  74629120.0 bytes 
+         Mysql2Test.test_pluck(n): 255881216.0 bytes - 3.43x  larger
+
+===== LIMIT=3000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    88.228M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   338.616M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  88227840.0 bytes 
+         Mysql2Test.test_pluck(n): 338616320.0 bytes - 3.84x  larger
+
+===== LIMIT=5000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   110.547M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   534.692M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 110546944.0 bytes 
+         Mysql2Test.test_pluck(n): 534691840.0 bytes - 4.84x  larger
+
+===== LIMIT=10000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   117.191M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   967.963M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 117190656.0 bytes 
+         Mysql2Test.test_pluck(n): 967962624.0 bytes - 8.26x  larger
+
+===== LIMIT=20000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   162.988M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     1.886G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 162988032.0 bytes 
+         Mysql2Test.test_pluck(n): 1885614080.0 bytes - 11.57x  larger
+
+===== LIMIT=30000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   223.007M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     2.781G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 223006720.0 bytes 
+         Mysql2Test.test_pluck(n): 2781409280.0 bytes - 12.47x  larger
+
+===== LIMIT=50000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   340.709M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     2.903G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 340709376.0 bytes 
+         Mysql2Test.test_pluck(n): 2903052288.0 bytes - 8.52x  larger
+
+===== LIMIT=1000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    65.999M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   155.754M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  65998848.0 bytes 
+         Mysql2Test.test_pluck(n): 155754496.0 bytes - 2.36x  larger
+
+===== LIMIT=2000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    75.268M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   256.659M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  75268096.0 bytes 
+         Mysql2Test.test_pluck(n): 256659456.0 bytes - 3.41x  larger
+
+===== LIMIT=3000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    91.210M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   341.389M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  91209728.0 bytes 
+         Mysql2Test.test_pluck(n): 341389312.0 bytes - 3.74x  larger
+
+===== LIMIT=5000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   112.697M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   544.051M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 112697344.0 bytes 
+         Mysql2Test.test_pluck(n): 544051200.0 bytes - 4.83x  larger
+
+===== LIMIT=10000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   121.704M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   976.355M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 121704448.0 bytes 
+         Mysql2Test.test_pluck(n): 976355328.0 bytes - 8.02x  larger
+
+===== LIMIT=20000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   179.962M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     1.881G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 179961856.0 bytes 
+         Mysql2Test.test_pluck(n): 1880547328.0 bytes - 10.45x  larger
+
+===== LIMIT=30000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   235.762M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     2.787G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 235761664.0 bytes 
+         Mysql2Test.test_pluck(n): 2787467264.0 bytes - 11.82x  larger
+
+===== LIMIT=50000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   328.966M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     3.515G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 328966144.0 bytes 
+         Mysql2Test.test_pluck(n): 3515232256.0 bytes - 10.69x  larger
+
+===== LIMIT=1000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    66.245M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   153.768M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  66244608.0 bytes 
+         Mysql2Test.test_pluck(n): 153767936.0 bytes - 2.32x  larger
+
+===== LIMIT=2000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    71.537M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   253.833M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  71536640.0 bytes 
+         Mysql2Test.test_pluck(n): 253833216.0 bytes - 3.55x  larger
+
+===== LIMIT=3000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    83.952M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   345.186M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  83951616.0 bytes 
+         Mysql2Test.test_pluck(n): 345186304.0 bytes - 4.11x  larger
+
+===== LIMIT=5000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   119.337M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   542.134M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 119336960.0 bytes 
+         Mysql2Test.test_pluck(n): 542134272.0 bytes - 4.54x  larger
+
+===== LIMIT=10000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   121.512M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   984.416M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 121511936.0 bytes 
+         Mysql2Test.test_pluck(n): 984416256.0 bytes - 8.10x  larger
+
+===== LIMIT=20000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   170.664M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     1.884G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 170663936.0 bytes 
+         Mysql2Test.test_pluck(n): 1884246016.0 bytes - 11.04x  larger
+
+===== LIMIT=30000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   228.958M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     2.758G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 228958208.0 bytes 
+         Mysql2Test.test_pluck(n): 2758426624.0 bytes - 12.05x  larger
+
+===== LIMIT=50000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   355.398M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     3.830G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 355397632.0 bytes 
+         Mysql2Test.test_pluck(n): 3830415360.0 bytes - 10.78x  larger
+
+===== LIMIT=1000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    66.892M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   157.266M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  66891776.0 bytes 
+         Mysql2Test.test_pluck(n): 157265920.0 bytes - 2.35x  larger
+
+===== LIMIT=2000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    73.613M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   253.665M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  73613312.0 bytes 
+         Mysql2Test.test_pluck(n): 253665280.0 bytes - 3.45x  larger
+
+===== LIMIT=3000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)    86.262M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   344.154M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n):  86261760.0 bytes 
+         Mysql2Test.test_pluck(n): 344154112.0 bytes - 3.99x  larger
+
+===== LIMIT=5000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   106.639M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   535.650M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 106639360.0 bytes 
+         Mysql2Test.test_pluck(n): 535650304.0 bytes - 5.02x  larger
+
+===== LIMIT=10000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   118.415M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)   976.806M bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 118415360.0 bytes 
+         Mysql2Test.test_pluck(n): 976805888.0 bytes - 8.25x  larger
+
+===== LIMIT=20000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   177.431M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     1.871G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 177430528.0 bytes 
+         Mysql2Test.test_pluck(n): 1870778368.0 bytes - 10.54x  larger
+
+===== LIMIT=30000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   226.820M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     2.772G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 226820096.0 bytes 
+         Mysql2Test.test_pluck(n): 2771537920.0 bytes - 12.22x  larger
+
+===== LIMIT=50000 =====
+Calculating -------------------------------------
+Mysql2Test.test_pluck_by_arrow(n)   324.194M bytes -     100.000 times
+         Mysql2Test.test_pluck(n)     3.947G bytes -     100.000 times
+
+Comparison:
+Mysql2Test.test_pluck_by_arrow(n): 324194304.0 bytes 
+         Mysql2Test.test_pluck(n): 3946917888.0 bytes - 12.17x  larger
+
