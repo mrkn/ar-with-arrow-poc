@@ -36,7 +36,7 @@ end
 
 data = Pandas::DataFrame.new(records, columns: %w[limit method size])
 data['size'] /= 1e+6 # bytes -> megabytes
-puts data
+puts data.groupby(['method', 'limit']).describe
 
 plt = Matplotlib::Pyplot
 plt.figure(figsize: [5, 5])
