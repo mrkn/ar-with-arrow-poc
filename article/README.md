@@ -3,6 +3,8 @@
 - Author: Kenta Murata at Speee, Inc.
 - Date: 2018-12-25
 
+I'm not English-native.  If you find incorrect English usage in this article, please give me your feedback as issues.
+
 ## tl;dr
 
 - The proof-of-concept optimization of AR's `pluck` method is demonstrated
