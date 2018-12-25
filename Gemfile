@@ -11,3 +11,6 @@ gem "rspec"
 gem "faker"
 
 gem "benchmark_driver", github: 'mrkn/benchmark-driver', branch: 'memory-runner-for-mac'
+
+gem "matplotlib"
+gem "pandas"

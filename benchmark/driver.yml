@@ -4,7 +4,7 @@ prelude: |
   n = Integer(ENV.fetch('LIMIT', '10000'))
 
 benchmark:
-  - Mysql2Test.test_pluck_by_arrow(n)
-  - Mysql2Test.test_pluck(n)
+  by_arrow: Mysql2Test.test_pluck_by_arrow(n)
+  original: Mysql2Test.test_pluck(n)
 
 loop_count: 100
