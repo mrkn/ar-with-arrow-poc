@@ -142,6 +142,7 @@ In this figure, the curve with circle marks, which labeld `by_arrow` in the lege
 
 The figure clearly shows the Apache Arrow version tremendously reduces the memory consumption.  The following table shows the average memory consumption for each pair of the batch size and the method.  The most right column in the table shows the efficiency of the memory consumption of the Arrow version compared to the original version.  The efficiency of the Arrow version is more than 2x for all the cases, and the most efficient case is more than 12x.
 
+**The average memory consumption**
 | limit | by\_arrow [MB] | original [MB] | ratio |
 | ----- | ----------:| -----------:| -----:|
 | 1000  |  65.739162 |  155.206451 | 2.361x |
