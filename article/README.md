@@ -182,7 +182,7 @@ The raw result is saved as [speed.log](../benchmark/speed.log) in the repository
 
 In this figure, the curve with circle marks, which labeld `by_arrow` in the legend, illustrates the trend of Apache Arrow version of `pluck` method.  On the other hand, the curve with cross marks, which labeld `original` in the legend, illustrates the trend of the original `pluck` method.
 
-The figure shows the Apache Arrow version is not slower than the original version for all the cases.  The difference among the methods increases as the batch size raisen.
+The figure shows the Apache Arrow version is not slower than the original version for all the cases.  The difference among the methods increases as the batch size raisen.  The cause of the difference is still not investigated. The author guesses the cause is GC load by the large amount of increase of objects in the original version, which is hinted in the figure of the memory consumption above.  So the author does not consider that the optimized version of pluck is faster than the original version even in the large batch size.
 
 ## Conclusion
 
