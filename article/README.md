@@ -187,3 +187,5 @@ The figure shows the Apache Arrow version is not slower than the original versio
 ## Conclusion
 
 The proof-of-concept optimization of `pluck` method using Apache Arrow is demonstrated.  Memory and computation time consumptions are compared to the original version of `pluck` method.  The result illustrates the optimized version is highly efficient in the memory consumption, and slightly efficient in the computation time consumption.
+
+Apache Arrow community has a plan to add the new protocols in the major RDBMS, such as MySQL and PostgreSQL, that returns the query result in Arrow format.  We can get rid of the conversion phase from the query result to RecordBatch after such protocols will get production ready.  It should reduce both the memory consumption and the computation time.
